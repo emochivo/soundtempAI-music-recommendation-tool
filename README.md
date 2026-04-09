@@ -3,6 +3,6 @@
 ## Tech Stack??
 - Frontend: React
 - Backend: Python
-- Weather data: OpenWeather API
+- Weather data: National Weather Service API / OpenWeather API (if we want the app to cover weather globally)
 - Music data: Spotify API
 - Database: Firebase?? idk
