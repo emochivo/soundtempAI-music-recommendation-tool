@@ -2,12 +2,21 @@ import requests
 
 def mood_to_query(mood):
     mapping = {
-        "sunny": "happy pop",
-        "rainy": "lofi chill",
-        "cloudy": "indie mellow",
-        "stormy": "dark ambient",
-        "cold": "acoustic soft",
-        "hot": "summer vibes",
+        "thunderstorm": "dark cinematic chill",
+        "drizzle": "soft lo-fi chill",
+        "rain": "lofi chill",
+        "snow": "calm cozy acoustic",
+        "mist": "soft ambient calm",
+        "smoke": "dark ambient cinematic",
+        "haze": "lofi mellow distant",
+        "fog": "dreamy ambient chill",
+        "dust": "desert ambient minimal",
+        "sand": "desert ambient minimal",
+        "ash": "dark cinematic tension",
+        "squall": "intense electronic energy",
+        "tornado": "chaotic cinematic orchestral",
+        "clear": "happy upbeat pop",
+        "clouds": "indie mellow relaxed",
         "default": "pop music"
     }
 
@@ -41,7 +50,7 @@ def get_songs(mood, limit=10):
 
 
 if __name__ == "__main__":
-    mood = "sunny"
+    mood = "atmosphere"
     results = get_songs(mood)
 
     for song in results:
