@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SoundTemp</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .main {
+      flex: 3;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .top-section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      flex: 1;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      min-height: 140px;
+    }
+
+    .playlists {
+      margin-top: 20px;
+    }
+
+    .playlist-grid {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .playlist-item {
+      width: 120px;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .playlist-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .player {
+      flex: 1;
+      background: #ffffff;
+      border-left: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .album-art {
+      width: 150px;
+      height: 150px;
+      background: #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .song-info {
+      text-align: center;
+    }
+
+    .controls button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 24px;
+      margin: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDE -->
+  <div class="main">
+    <h1>SoundTemp</h1>
+
+    <div class="top-section">
+
+      <!-- Weather -->
+      <div class="card" id="weather">
+        <h3>Weather Data</h3>
+        <p>Loading...</p>
+      </div>
+
+      <!-- Recommended -->
+      <div class="card" id="playlist">
+        <h3>Recommended Playlist</h3>
+        <p>Loading...</p>
+      </div>
+
+    </div>
+
+    <!-- More playlists -->
+    <div class="playlists">
+      <h3>More Songs</h3>
+      <div class="playlist-grid" id="more-playlists"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE PLAYER -->
+  <div class="player">
+    <div class="album-art" id="album-art"></div>
+
+    <div class="song-info">
+      <p id="song-title">Select a song</p>
+      <p id="song-artist"></p>
+    </div>
+
+    <div class="controls">
+      <button onclick="playPreview()">▶</button>
+    </div>
+
+    <audio id="audio"></audio>
+  </div>
+
+</div>
+
+<script>
+let currentSong = null;
+
+async function loadData() {
+  try {
+    const response = await fetch("http://127.0.0.1:5000");
+    const data = await response.json();
+
+    // 🌦️ Weather
+    document.getElementById("weather").innerHTML = `
+      <h3>Weather</h3>
+      <p>${data.weather.city}, ${data.weather.country}</p>
+      <p>${data.weather.weather}</p>
+      <p>${data.weather.temperature}°F</p>
+    `;
+
+    // 🎵 First song (recommended)
+    const firstSong = data.songs[0];
+    currentSong = firstSong;
+
+    document.getElementById("playlist").innerHTML = `
+      <h3>Recommended</h3>
+      <p>${firstSong.name} - ${firstSong.artist}</p>
+      <button onclick='selectSong(${JSON.stringify(firstSong)})'>Play</button>
+    `;
+
+    updatePlayer(firstSong);
+
+    // 🎧 More songs
+    const container = document.getElementById("more-playlists");
+    container.innerHTML = "";
+
+    data.songs.slice(1, 6).forEach(song => {
+      const div = document.createElement("div");
+      div.className = "playlist-item";
+
+      div.innerHTML = `
+        <img src="${song.album_cover}">
+        <p>${song.name}</p>
+        <small>${song.artist}</small>
+      `;
+
+      div.onclick = () => selectSong(song);
+
+      container.appendChild(div);
+    });
+
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+function selectSong(song) {
+  currentSong = song;
+  updatePlayer(song);
+}
+
+function updatePlayer(song) {
+  document.getElementById("album-art").style.backgroundImage = `url(${song.album_cover})`;
+  document.getElementById("song-title").innerText = song.name;
+  document.getElementById("song-artist").innerText = song.artist;
+
+  // IMPORTANT: Deezer preview (30 sec)
+  document.getElementById("audio").src = song.link; // fallback
+}
+
+function playPreview() {
+  const audio = document.getElementById("audio");
+  audio.play();
+}
+
+loadData();
+</script>
+
+</body>
+</html>
