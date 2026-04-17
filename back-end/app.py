@@ -1,10 +1,15 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from get_weather import getUserLocation, getCurrentWeather
 from get_music import get_songs
 
 app = Flask(__name__)
 
 
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("soundtemp.html")
 @app.route("/recommend", methods=["GET"])
 def recommend():
     try:

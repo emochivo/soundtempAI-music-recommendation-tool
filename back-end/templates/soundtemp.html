@@ -153,10 +153,9 @@ let currentSong = null;
 
 async function loadData() {
   try {
-    const response = await fetch("http://127.0.0.1:5000");
+    const response = await fetch("/recommend");
     const data = await response.json();
 
-    // 🌦️ Weather
     document.getElementById("weather").innerHTML = `
       <h3>Weather</h3>
       <p>${data.weather.city}, ${data.weather.country}</p>
@@ -164,19 +163,17 @@ async function loadData() {
       <p>${data.weather.temperature}°F</p>
     `;
 
-    // 🎵 First song (recommended)
     const firstSong = data.songs[0];
     currentSong = firstSong;
 
     document.getElementById("playlist").innerHTML = `
       <h3>Recommended</h3>
       <p>${firstSong.name} - ${firstSong.artist}</p>
-      <button onclick='selectSong(${JSON.stringify(firstSong)})'>Play</button>
+<!--      <button onclick='selectSong(${JSON.stringify(firstSong)})'>Play</button>-->
     `;
 
     updatePlayer(firstSong);
 
-    // 🎧 More songs
     const container = document.getElementById("more-playlists");
     container.innerHTML = "";
 
@@ -211,12 +208,17 @@ function updatePlayer(song) {
   document.getElementById("song-artist").innerText = song.artist;
 
   // IMPORTANT: Deezer preview (30 sec)
-  document.getElementById("audio").src = song.link; // fallback
+  document.getElementById("audio").src = song.preview; // fallback
 }
 
 function playPreview() {
   const audio = document.getElementById("audio");
-  audio.play();
+
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
 }
 
 loadData();

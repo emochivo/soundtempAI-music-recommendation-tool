@@ -42,7 +42,7 @@ def get_songs(mood, limit=10):
         songs.append({
             "name": item["title"],
             "artist": item["artist"]["name"],
-            "link": item["link"],         # Deezer track page
+            "preview": item["preview"],
             "album_cover": item["album"]["cover"]
         })
 
