@@ -5,6 +5,7 @@ __pycache__/
 # VS Code / PyCharm
 .idea/
 .vscode/
+.venv
 
 # Environment variables
 .env
