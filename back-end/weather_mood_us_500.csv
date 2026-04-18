@@ -1,0 +1,501 @@
+city,country,weather,weather_desc,temperature,mood
+San Diego,United States,Smoke,smoke,72.19,stressed
+Miami,United States,Clouds,broken clouds,58.49,calm
+Seattle,United States,Dust,dust,51.63,stressed
+Houston,United States,Haze,haze,65.94,gloomy
+San Jose,United States,Fog,fog,52.28,gloomy
+San Antonio,United States,Thunderstorm,thunderstorm,69.8,stressed
+Miami,United States,Smoke,smoke,73.13,stressed
+San Diego,United States,Mist,mist,60.48,gloomy
+New York,United States,Haze,haze,63.45,gloomy
+Phoenix,United States,Haze,haze,74.88,gloomy
+San Antonio,United States,Snow,light snow,25.33,stressed
+Tampa,United States,Snow,light snow,22.95,stressed
+Orlando,United States,Thunderstorm,heavy thunderstorm,78.8,stressed
+Houston,United States,Clouds,overcast clouds,62.57,calm
+San Francisco,United States,Rain,moderate rain,64.1,calm
+San Francisco,United States,Clouds,scattered clouds,69.49,neutral
+Orlando,United States,Fog,fog,79.67,gloomy
+San Jose,United States,Thunderstorm,thunderstorm,70.33,stressed
+San Francisco,United States,Clouds,broken clouds,72.28,neutral
+Houston,United States,Clear,clear sky,62.45,happy
+Atlanta,United States,Fog,fog,68.09,gloomy
+Atlanta,United States,Haze,haze,74.25,gloomy
+Tampa,United States,Dust,dust,61.27,stressed
+Austin,United States,Rain,heavy intensity rain,68.31,calm
+Denver,United States,Snow,heavy snow,32.57,calm
+Dallas,United States,Smoke,smoke,73.15,stressed
+New York,United States,Rain,heavy intensity rain,52.04,sad
+Atlanta,United States,Haze,haze,84.71,gloomy
+San Francisco,United States,Rain,heavy intensity rain,67.73,calm
+Orlando,United States,Drizzle,light drizzle,54.46,sad
+Chicago,United States,Dust,dust,53.31,stressed
+Los Angeles,United States,Clouds,scattered clouds,59.72,calm
+Seattle,United States,Dust,dust,55.22,stressed
+Austin,United States,Clouds,scattered clouds,56.65,calm
+Boston,United States,Snow,light snow,29.12,stressed
+San Antonio,United States,Snow,light snow,31.54,calm
+Atlanta,United States,Clouds,scattered clouds,55.41,calm
+Dallas,United States,Haze,haze,70.28,gloomy
+Los Angeles,United States,Fog,fog,81.12,gloomy
+Tampa,United States,Dust,dust,52.18,stressed
+Los Angeles,United States,Fog,fog,79.87,gloomy
+Orlando,United States,Mist,mist,79.35,gloomy
+Miami,United States,Smoke,smoke,69.57,stressed
+Austin,United States,Mist,mist,73.29,gloomy
+Seattle,United States,Dust,dust,64.05,stressed
+Orlando,United States,Drizzle,light drizzle,51.4,sad
+Miami,United States,Dust,dust,51.29,stressed
+San Diego,United States,Haze,haze,52.31,gloomy
+San Diego,United States,Clear,clear sky,79.55,happy
+Miami,United States,Rain,heavy intensity rain,52.87,sad
+New York,United States,Thunderstorm,thunderstorm,77.92,stressed
+Boston,United States,Mist,mist,52.37,gloomy
+Austin,United States,Fog,fog,81.67,gloomy
+Miami,United States,Smoke,smoke,69.72,stressed
+Chicago,United States,Mist,mist,81.95,gloomy
+Phoenix,United States,Dust,dust,54.06,stressed
+Boston,United States,Mist,mist,55.51,gloomy
+Boston,United States,Clouds,overcast clouds,56.61,calm
+Portland,United States,Drizzle,light drizzle,60.96,calm
+New York,United States,Snow,heavy snow,30.66,calm
+Boston,United States,Snow,light snow,24.56,stressed
+San Diego,United States,Fog,fog,70.94,gloomy
+Boston,United States,Dust,dust,70.66,stressed
+Phoenix,United States,Mist,mist,51.66,gloomy
+Las Vegas,United States,Clouds,scattered clouds,70.64,neutral
+Seattle,United States,Rain,light rain,55.04,calm
+Los Angeles,United States,Thunderstorm,heavy thunderstorm,77.44,stressed
+Dallas,United States,Thunderstorm,thunderstorm,74.32,stressed
+San Francisco,United States,Snow,heavy snow,31.16,calm
+Boston,United States,Fog,fog,60.3,gloomy
+Atlanta,United States,Clear,clear sky,86.81,energetic
+Atlanta,United States,Mist,mist,64.93,gloomy
+San Antonio,United States,Fog,fog,71.34,gloomy
+Boston,United States,Thunderstorm,heavy thunderstorm,80.3,stressed
+Seattle,United States,Smoke,smoke,53.76,stressed
+San Francisco,United States,Fog,fog,56.92,gloomy
+Houston,United States,Snow,heavy snow,33.32,calm
+Denver,United States,Mist,mist,58.66,gloomy
+Atlanta,United States,Dust,dust,76.91,stressed
+San Francisco,United States,Rain,moderate rain,67.99,calm
+Tampa,United States,Rain,heavy intensity rain,46.62,sad
+Miami,United States,Snow,heavy snow,21.09,stressed
+Las Vegas,United States,Smoke,smoke,56.95,stressed
+Tampa,United States,Fog,fog,76.5,gloomy
+Chicago,United States,Smoke,smoke,50.83,stressed
+Atlanta,United States,Dust,dust,55.31,stressed
+Chicago,United States,Rain,light rain,63.86,calm
+Dallas,United States,Mist,mist,55.27,gloomy
+Atlanta,United States,Smoke,smoke,54.07,stressed
+Atlanta,United States,Mist,mist,68.2,gloomy
+Dallas,United States,Clear,clear sky,77.19,happy
+Dallas,United States,Drizzle,light drizzle,64.64,calm
+Boston,United States,Clouds,scattered clouds,74.09,neutral
+San Jose,United States,Clouds,overcast clouds,64.23,calm
+Seattle,United States,Rain,heavy intensity rain,65.33,calm
+Chicago,United States,Dust,dust,50.11,stressed
+Orlando,United States,Snow,heavy snow,21.54,stressed
+Seattle,United States,Clouds,broken clouds,70.33,neutral
+Seattle,United States,Clear,clear sky,67.94,happy
+Chicago,United States,Fog,fog,55.05,gloomy
+Dallas,United States,Clouds,scattered clouds,56.54,calm
+San Antonio,United States,Mist,mist,82.46,gloomy
+Orlando,United States,Clear,few clouds,63.67,happy
+Denver,United States,Clouds,overcast clouds,63.28,calm
+Portland,United States,Clear,clear sky,70.28,happy
+San Francisco,United States,Haze,haze,56.96,gloomy
+Miami,United States,Clear,clear sky,81.63,energetic
+San Antonio,United States,Thunderstorm,thunderstorm,66.73,stressed
+Houston,United States,Dust,dust,61.9,stressed
+Los Angeles,United States,Fog,fog,84.31,gloomy
+Orlando,United States,Fog,fog,55.9,gloomy
+San Francisco,United States,Clouds,overcast clouds,67.05,neutral
+Boston,United States,Snow,heavy snow,21.14,stressed
+Boston,United States,Smoke,smoke,83.19,stressed
+San Jose,United States,Clouds,broken clouds,63.16,calm
+Houston,United States,Haze,haze,80.07,gloomy
+Portland,United States,Fog,fog,51.03,gloomy
+Phoenix,United States,Rain,heavy intensity rain,68.77,calm
+Dallas,United States,Fog,fog,79.6,gloomy
+San Francisco,United States,Mist,mist,82.22,gloomy
+Dallas,United States,Smoke,smoke,76.98,stressed
+San Diego,United States,Fog,fog,63.36,gloomy
+Las Vegas,United States,Haze,haze,68.24,gloomy
+Phoenix,United States,Fog,fog,67.7,gloomy
+Chicago,United States,Mist,mist,65.9,gloomy
+San Francisco,United States,Mist,mist,69.5,gloomy
+San Antonio,United States,Rain,heavy intensity rain,64.77,calm
+Atlanta,United States,Clouds,overcast clouds,60.3,calm
+Orlando,United States,Thunderstorm,heavy thunderstorm,66.38,stressed
+Atlanta,United States,Haze,haze,60.05,gloomy
+Denver,United States,Smoke,smoke,52.27,stressed
+San Francisco,United States,Drizzle,light drizzle,51.83,sad
+Portland,United States,Drizzle,light drizzle,54.06,sad
+Atlanta,United States,Dust,dust,72.35,stressed
+Houston,United States,Clouds,broken clouds,64.87,calm
+Orlando,United States,Rain,light rain,52.13,sad
+Phoenix,United States,Drizzle,light drizzle,56.89,calm
+Orlando,United States,Haze,haze,80.17,gloomy
+San Jose,United States,Smoke,smoke,79.07,stressed
+Dallas,United States,Thunderstorm,heavy thunderstorm,73.95,stressed
+Dallas,United States,Haze,haze,80.02,gloomy
+Denver,United States,Haze,haze,74.97,gloomy
+Seattle,United States,Thunderstorm,thunderstorm,78.24,stressed
+Seattle,United States,Drizzle,light drizzle,64.03,calm
+Tampa,United States,Rain,light rain,51.88,sad
+Chicago,United States,Fog,fog,55.28,gloomy
+Denver,United States,Fog,fog,72.91,gloomy
+Miami,United States,Haze,haze,59.29,gloomy
+Miami,United States,Thunderstorm,heavy thunderstorm,71.89,stressed
+Boston,United States,Smoke,smoke,67.26,stressed
+San Francisco,United States,Thunderstorm,thunderstorm,82.57,stressed
+San Francisco,United States,Fog,fog,61.44,gloomy
+Seattle,United States,Clear,clear sky,71.14,happy
+Los Angeles,United States,Thunderstorm,heavy thunderstorm,74.65,stressed
+San Francisco,United States,Smoke,smoke,70.22,stressed
+Las Vegas,United States,Rain,light rain,66.7,calm
+Atlanta,United States,Haze,haze,54.05,gloomy
+San Antonio,United States,Rain,heavy intensity rain,52.1,sad
+Miami,United States,Rain,heavy intensity rain,52.7,sad
+New York,United States,Snow,heavy snow,24.86,stressed
+Orlando,United States,Clouds,overcast clouds,55.97,calm
+Tampa,United States,Smoke,smoke,65.57,stressed
+San Jose,United States,Mist,mist,70.21,gloomy
+Portland,United States,Thunderstorm,thunderstorm,82.71,stressed
+Tampa,United States,Haze,haze,54.26,gloomy
+Dallas,United States,Rain,heavy intensity rain,69.57,calm
+Denver,United States,Thunderstorm,heavy thunderstorm,68.27,stressed
+Miami,United States,Fog,fog,73.95,gloomy
+Los Angeles,United States,Snow,heavy snow,29.54,stressed
+Houston,United States,Clear,few clouds,62.65,happy
+Orlando,United States,Drizzle,light drizzle,51.75,sad
+Austin,United States,Clear,few clouds,68.9,happy
+Orlando,United States,Snow,heavy snow,25.79,stressed
+New York,United States,Smoke,smoke,52.27,stressed
+Phoenix,United States,Clear,few clouds,71.68,happy
+Portland,United States,Drizzle,light drizzle,69.47,calm
+San Francisco,United States,Thunderstorm,heavy thunderstorm,79.49,stressed
+Houston,United States,Clear,few clouds,76.57,happy
+Portland,United States,Drizzle,light drizzle,67.98,calm
+San Francisco,United States,Dust,dust,60.51,stressed
+Atlanta,United States,Dust,dust,64.16,stressed
+Orlando,United States,Fog,fog,80.43,gloomy
+San Antonio,United States,Drizzle,light drizzle,66.87,calm
+New York,United States,Smoke,smoke,79.08,stressed
+San Francisco,United States,Snow,light snow,25.88,stressed
+Dallas,United States,Clouds,overcast clouds,72.78,neutral
+San Diego,United States,Drizzle,light drizzle,54.35,sad
+Chicago,United States,Mist,mist,58.05,gloomy
+San Antonio,United States,Drizzle,light drizzle,66.6,calm
+San Diego,United States,Drizzle,light drizzle,56.85,calm
+Phoenix,United States,Rain,moderate rain,45.09,sad
+Atlanta,United States,Haze,haze,71.25,gloomy
+San Jose,United States,Snow,light snow,28.07,stressed
+Miami,United States,Mist,mist,78.79,gloomy
+San Jose,United States,Haze,haze,68.98,gloomy
+Atlanta,United States,Snow,heavy snow,29.53,stressed
+Tampa,United States,Thunderstorm,heavy thunderstorm,65.19,stressed
+San Jose,United States,Snow,heavy snow,32.65,calm
+San Francisco,United States,Mist,mist,59.2,gloomy
+Phoenix,United States,Clouds,broken clouds,56.13,calm
+Atlanta,United States,Thunderstorm,heavy thunderstorm,68.3,stressed
+Miami,United States,Drizzle,light drizzle,61.87,calm
+Portland,United States,Haze,haze,83.24,gloomy
+Austin,United States,Clear,clear sky,88.17,energetic
+Dallas,United States,Haze,haze,52.79,gloomy
+Los Angeles,United States,Clouds,broken clouds,61.81,calm
+New York,United States,Mist,mist,53.15,gloomy
+Denver,United States,Drizzle,light drizzle,50.49,sad
+Seattle,United States,Drizzle,light drizzle,60.83,calm
+Tampa,United States,Dust,dust,71.94,stressed
+Los Angeles,United States,Fog,fog,53.61,gloomy
+Austin,United States,Dust,dust,77.61,stressed
+Tampa,United States,Haze,haze,54.1,gloomy
+San Francisco,United States,Fog,fog,84.0,gloomy
+Denver,United States,Snow,heavy snow,29.51,stressed
+Tampa,United States,Drizzle,light drizzle,46.52,sad
+Denver,United States,Thunderstorm,heavy thunderstorm,78.11,stressed
+Orlando,United States,Rain,heavy intensity rain,58.08,calm
+Las Vegas,United States,Smoke,smoke,77.01,stressed
+Portland,United States,Fog,fog,73.93,gloomy
+San Antonio,United States,Haze,haze,82.62,gloomy
+Tampa,United States,Fog,fog,81.26,gloomy
+Denver,United States,Rain,heavy intensity rain,48.31,sad
+Los Angeles,United States,Dust,dust,50.12,stressed
+Seattle,United States,Clear,clear sky,69.36,happy
+San Antonio,United States,Mist,mist,63.83,gloomy
+Dallas,United States,Drizzle,light drizzle,64.96,calm
+Las Vegas,United States,Haze,haze,57.7,gloomy
+San Antonio,United States,Dust,dust,71.54,stressed
+Portland,United States,Smoke,smoke,76.18,stressed
+New York,United States,Fog,fog,62.95,gloomy
+Atlanta,United States,Snow,heavy snow,29.15,stressed
+New York,United States,Thunderstorm,heavy thunderstorm,70.43,stressed
+Orlando,United States,Dust,dust,77.87,stressed
+Houston,United States,Mist,mist,54.79,gloomy
+San Antonio,United States,Fog,fog,66.96,gloomy
+San Francisco,United States,Thunderstorm,thunderstorm,65.49,stressed
+Boston,United States,Mist,mist,66.26,gloomy
+Chicago,United States,Clouds,scattered clouds,61.35,calm
+Dallas,United States,Drizzle,light drizzle,63.35,calm
+Chicago,United States,Haze,haze,51.77,gloomy
+Las Vegas,United States,Clear,few clouds,65.73,happy
+Los Angeles,United States,Rain,moderate rain,56.76,calm
+New York,United States,Thunderstorm,heavy thunderstorm,67.25,stressed
+Denver,United States,Dust,dust,61.56,stressed
+Phoenix,United States,Thunderstorm,thunderstorm,74.57,stressed
+Las Vegas,United States,Thunderstorm,thunderstorm,68.11,stressed
+New York,United States,Smoke,smoke,66.3,stressed
+Las Vegas,United States,Dust,dust,80.28,stressed
+Los Angeles,United States,Smoke,smoke,73.05,stressed
+San Diego,United States,Dust,dust,84.54,stressed
+Tampa,United States,Mist,mist,51.54,gloomy
+Portland,United States,Drizzle,light drizzle,50.77,sad
+Austin,United States,Clear,few clouds,62.95,happy
+San Jose,United States,Smoke,smoke,66.94,stressed
+Orlando,United States,Drizzle,light drizzle,66.6,calm
+Atlanta,United States,Fog,fog,84.8,gloomy
+San Diego,United States,Dust,dust,58.56,stressed
+Denver,United States,Clouds,broken clouds,65.65,neutral
+San Francisco,United States,Drizzle,light drizzle,59.4,calm
+San Diego,United States,Thunderstorm,heavy thunderstorm,78.4,stressed
+Portland,United States,Clear,few clouds,94.66,energetic
+Boston,United States,Clear,few clouds,90.86,energetic
+San Francisco,United States,Rain,moderate rain,66.81,calm
+Tampa,United States,Fog,fog,51.47,gloomy
+Chicago,United States,Fog,fog,51.88,gloomy
+Miami,United States,Dust,dust,58.05,stressed
+San Antonio,United States,Rain,heavy intensity rain,58.49,calm
+Denver,United States,Dust,dust,72.34,stressed
+Orlando,United States,Rain,heavy intensity rain,62.46,calm
+Atlanta,United States,Rain,light rain,64.42,calm
+Austin,United States,Snow,light snow,21.57,stressed
+Dallas,United States,Rain,moderate rain,51.42,sad
+San Antonio,United States,Clear,clear sky,83.71,energetic
+Dallas,United States,Smoke,smoke,62.47,stressed
+Denver,United States,Smoke,smoke,69.8,stressed
+Miami,United States,Haze,haze,50.14,gloomy
+Houston,United States,Clouds,scattered clouds,60.28,calm
+Houston,United States,Mist,mist,61.93,gloomy
+Dallas,United States,Mist,mist,84.78,gloomy
+San Antonio,United States,Haze,haze,82.29,gloomy
+Phoenix,United States,Smoke,smoke,79.84,stressed
+Chicago,United States,Fog,fog,80.19,gloomy
+Seattle,United States,Rain,moderate rain,68.87,calm
+Los Angeles,United States,Clear,few clouds,62.44,happy
+Portland,United States,Dust,dust,82.72,stressed
+Las Vegas,United States,Clouds,scattered clouds,58.44,calm
+Tampa,United States,Mist,mist,60.69,gloomy
+Portland,United States,Clouds,scattered clouds,67.0,neutral
+Las Vegas,United States,Rain,moderate rain,67.37,calm
+San Antonio,United States,Thunderstorm,thunderstorm,72.94,stressed
+Orlando,United States,Mist,mist,72.87,gloomy
+Phoenix,United States,Fog,fog,57.78,gloomy
+Phoenix,United States,Rain,moderate rain,66.59,calm
+San Jose,United States,Rain,heavy intensity rain,52.91,sad
+Phoenix,United States,Haze,haze,65.73,gloomy
+Houston,United States,Mist,mist,57.33,gloomy
+New York,United States,Drizzle,light drizzle,57.78,calm
+Houston,United States,Smoke,smoke,72.84,stressed
+New York,United States,Smoke,smoke,66.45,stressed
+Portland,United States,Drizzle,light drizzle,57.03,calm
+San Antonio,United States,Fog,fog,59.73,gloomy
+Tampa,United States,Haze,haze,51.91,gloomy
+Boston,United States,Smoke,smoke,52.01,stressed
+Miami,United States,Drizzle,light drizzle,60.83,calm
+Las Vegas,United States,Smoke,smoke,80.1,stressed
+Los Angeles,United States,Snow,light snow,26.17,stressed
+San Antonio,United States,Clear,few clouds,61.15,happy
+Seattle,United States,Smoke,smoke,58.9,stressed
+New York,United States,Drizzle,light drizzle,57.66,calm
+Phoenix,United States,Fog,fog,66.27,gloomy
+San Antonio,United States,Smoke,smoke,51.26,stressed
+Austin,United States,Clouds,overcast clouds,67.15,neutral
+Seattle,United States,Mist,mist,60.65,gloomy
+San Diego,United States,Clouds,overcast clouds,74.42,neutral
+Atlanta,United States,Thunderstorm,thunderstorm,67.63,stressed
+Houston,United States,Mist,mist,74.92,gloomy
+Orlando,United States,Dust,dust,67.84,stressed
+Denver,United States,Rain,moderate rain,45.65,sad
+San Antonio,United States,Haze,haze,72.54,gloomy
+Phoenix,United States,Mist,mist,52.93,gloomy
+Orlando,United States,Clear,few clouds,72.27,happy
+Denver,United States,Rain,heavy intensity rain,60.47,calm
+Chicago,United States,Drizzle,light drizzle,69.45,calm
+Chicago,United States,Haze,haze,77.77,gloomy
+Phoenix,United States,Rain,heavy intensity rain,67.23,calm
+San Diego,United States,Drizzle,light drizzle,54.78,sad
+Miami,United States,Smoke,smoke,52.0,stressed
+Austin,United States,Clear,few clouds,63.46,happy
+New York,United States,Haze,haze,56.83,gloomy
+Seattle,United States,Clear,clear sky,83.11,energetic
+Boston,United States,Clouds,scattered clouds,68.3,neutral
+Denver,United States,Drizzle,light drizzle,50.46,sad
+Austin,United States,Clear,few clouds,65.56,happy
+New York,United States,Drizzle,light drizzle,68.41,calm
+San Antonio,United States,Mist,mist,57.22,gloomy
+San Antonio,United States,Snow,light snow,31.27,calm
+San Antonio,United States,Thunderstorm,thunderstorm,71.1,stressed
+Miami,United States,Clouds,scattered clouds,58.6,calm
+Houston,United States,Clear,clear sky,69.32,happy
+Los Angeles,United States,Snow,light snow,21.86,stressed
+San Francisco,United States,Fog,fog,69.71,gloomy
+San Antonio,United States,Rain,moderate rain,64.05,calm
+Houston,United States,Clouds,overcast clouds,66.59,neutral
+Atlanta,United States,Fog,fog,59.09,gloomy
+Boston,United States,Rain,light rain,69.58,calm
+San Jose,United States,Clouds,broken clouds,71.98,neutral
+Miami,United States,Mist,mist,57.0,gloomy
+San Francisco,United States,Dust,dust,56.39,stressed
+San Antonio,United States,Drizzle,light drizzle,62.84,calm
+San Francisco,United States,Rain,light rain,62.81,calm
+Chicago,United States,Clear,clear sky,86.14,energetic
+Las Vegas,United States,Dust,dust,57.17,stressed
+Tampa,United States,Haze,haze,70.0,gloomy
+Dallas,United States,Snow,light snow,29.74,stressed
+Chicago,United States,Smoke,smoke,77.02,stressed
+Dallas,United States,Haze,haze,61.98,gloomy
+Portland,United States,Haze,haze,51.29,gloomy
+San Jose,United States,Thunderstorm,heavy thunderstorm,73.96,stressed
+Los Angeles,United States,Clouds,overcast clouds,56.91,calm
+Denver,United States,Mist,mist,67.16,gloomy
+New York,United States,Snow,heavy snow,27.9,stressed
+Phoenix,United States,Mist,mist,60.84,gloomy
+Miami,United States,Drizzle,light drizzle,67.61,calm
+San Francisco,United States,Fog,fog,79.51,gloomy
+Orlando,United States,Haze,haze,69.23,gloomy
+Chicago,United States,Haze,haze,82.61,gloomy
+Chicago,United States,Clear,clear sky,94.24,energetic
+Las Vegas,United States,Fog,fog,67.42,gloomy
+Portland,United States,Rain,moderate rain,57.43,calm
+Austin,United States,Haze,haze,80.77,gloomy
+Denver,United States,Fog,fog,69.61,gloomy
+San Diego,United States,Rain,light rain,54.01,sad
+Tampa,United States,Thunderstorm,thunderstorm,81.76,stressed
+Austin,United States,Fog,fog,66.09,gloomy
+Seattle,United States,Clouds,broken clouds,70.69,neutral
+Austin,United States,Rain,moderate rain,45.63,sad
+Dallas,United States,Snow,light snow,33.32,calm
+Seattle,United States,Fog,fog,70.6,gloomy
+Boston,United States,Rain,heavy intensity rain,50.53,sad
+Tampa,United States,Clear,few clouds,90.52,energetic
+Boston,United States,Drizzle,light drizzle,48.58,sad
+San Antonio,United States,Clear,clear sky,91.86,energetic
+Los Angeles,United States,Clouds,broken clouds,73.98,neutral
+Los Angeles,United States,Drizzle,light drizzle,55.39,calm
+Las Vegas,United States,Thunderstorm,thunderstorm,66.27,stressed
+Atlanta,United States,Snow,heavy snow,20.19,stressed
+Portland,United States,Snow,heavy snow,25.91,stressed
+Austin,United States,Fog,fog,64.54,gloomy
+Denver,United States,Drizzle,light drizzle,66.42,calm
+Portland,United States,Clouds,scattered clouds,58.29,calm
+Atlanta,United States,Fog,fog,81.92,gloomy
+Tampa,United States,Clear,few clouds,72.01,happy
+New York,United States,Dust,dust,61.37,stressed
+San Diego,United States,Fog,fog,59.64,gloomy
+Miami,United States,Snow,light snow,20.51,stressed
+Portland,United States,Drizzle,light drizzle,65.89,calm
+Portland,United States,Clouds,overcast clouds,55.23,calm
+San Jose,United States,Rain,light rain,59.98,calm
+New York,United States,Fog,fog,58.85,gloomy
+Atlanta,United States,Rain,light rain,46.66,sad
+San Antonio,United States,Snow,light snow,21.43,stressed
+Portland,United States,Dust,dust,59.76,stressed
+San Antonio,United States,Fog,fog,82.31,gloomy
+Denver,United States,Thunderstorm,thunderstorm,65.45,stressed
+San Francisco,United States,Mist,mist,55.9,gloomy
+San Diego,United States,Dust,dust,84.58,stressed
+Seattle,United States,Haze,haze,67.95,gloomy
+Portland,United States,Smoke,smoke,58.68,stressed
+Las Vegas,United States,Drizzle,light drizzle,53.38,sad
+Dallas,United States,Dust,dust,72.57,stressed
+Orlando,United States,Clouds,overcast clouds,62.83,calm
+San Diego,United States,Dust,dust,51.11,stressed
+Orlando,United States,Dust,dust,56.08,stressed
+San Francisco,United States,Haze,haze,78.09,gloomy
+Portland,United States,Mist,mist,71.63,gloomy
+New York,United States,Clear,clear sky,84.48,energetic
+Las Vegas,United States,Rain,light rain,61.02,calm
+San Jose,United States,Haze,haze,60.32,gloomy
+San Antonio,United States,Snow,light snow,25.5,stressed
+Phoenix,United States,Thunderstorm,heavy thunderstorm,76.39,stressed
+Portland,United States,Dust,dust,52.45,stressed
+Boston,United States,Clear,few clouds,68.25,happy
+Portland,United States,Drizzle,light drizzle,51.34,sad
+New York,United States,Mist,mist,60.94,gloomy
+Tampa,United States,Thunderstorm,heavy thunderstorm,65.62,stressed
+Seattle,United States,Rain,heavy intensity rain,57.08,calm
+Miami,United States,Clear,few clouds,70.9,happy
+Tampa,United States,Rain,light rain,66.82,calm
+San Diego,United States,Snow,heavy snow,30.33,calm
+Miami,United States,Mist,mist,53.33,gloomy
+Tampa,United States,Smoke,smoke,76.06,stressed
+Boston,United States,Thunderstorm,thunderstorm,67.9,stressed
+Chicago,United States,Clear,clear sky,62.18,happy
+Denver,United States,Thunderstorm,heavy thunderstorm,81.18,stressed
+New York,United States,Mist,mist,79.97,gloomy
+Los Angeles,United States,Rain,light rain,57.54,calm
+Miami,United States,Mist,mist,79.85,gloomy
+Seattle,United States,Snow,light snow,23.71,stressed
+Phoenix,United States,Snow,heavy snow,30.11,calm
+Los Angeles,United States,Smoke,smoke,73.83,stressed
+Los Angeles,United States,Fog,fog,74.08,gloomy
+Las Vegas,United States,Drizzle,light drizzle,59.06,calm
+Los Angeles,United States,Smoke,smoke,58.45,stressed
+Denver,United States,Drizzle,light drizzle,62.04,calm
+Chicago,United States,Dust,dust,78.43,stressed
+Boston,United States,Haze,haze,76.82,gloomy
+San Jose,United States,Rain,heavy intensity rain,62.57,calm
+Boston,United States,Mist,mist,60.97,gloomy
+Houston,United States,Smoke,smoke,54.88,stressed
+Denver,United States,Clear,few clouds,90.94,energetic
+Las Vegas,United States,Drizzle,light drizzle,63.96,calm
+Chicago,United States,Smoke,smoke,69.69,stressed
+Atlanta,United States,Drizzle,light drizzle,60.13,calm
+Boston,United States,Smoke,smoke,53.18,stressed
+Denver,United States,Thunderstorm,thunderstorm,72.65,stressed
+San Diego,United States,Clouds,broken clouds,65.55,neutral
+San Antonio,United States,Haze,haze,63.37,gloomy
+Tampa,United States,Fog,fog,83.81,gloomy
+Austin,United States,Snow,light snow,27.36,stressed
+Houston,United States,Mist,mist,75.35,gloomy
+San Francisco,United States,Smoke,smoke,51.51,stressed
+Phoenix,United States,Mist,mist,57.26,gloomy
+Boston,United States,Snow,heavy snow,32.47,calm
+Orlando,United States,Smoke,smoke,62.75,stressed
+Chicago,United States,Snow,heavy snow,27.52,stressed
+Las Vegas,United States,Thunderstorm,heavy thunderstorm,77.0,stressed
+Portland,United States,Dust,dust,84.67,stressed
+New York,United States,Clouds,broken clouds,69.8,neutral
+Atlanta,United States,Rain,moderate rain,60.87,calm
+Atlanta,United States,Snow,light snow,20.46,stressed
+San Jose,United States,Smoke,smoke,78.42,stressed
+Houston,United States,Clouds,broken clouds,72.55,neutral
+Atlanta,United States,Clear,few clouds,93.39,energetic
+Seattle,United States,Mist,mist,76.63,gloomy
+Orlando,United States,Snow,heavy snow,31.18,calm
+Atlanta,United States,Mist,mist,64.32,gloomy
+Boston,United States,Smoke,smoke,61.04,stressed
+Las Vegas,United States,Fog,fog,51.59,gloomy
+Tampa,United States,Dust,dust,77.21,stressed
+Portland,United States,Dust,dust,73.05,stressed
+Miami,United States,Fog,fog,77.78,gloomy
+Chicago,United States,Fog,fog,82.31,gloomy
+Los Angeles,United States,Rain,moderate rain,49.82,sad
+Boston,United States,Haze,haze,77.18,gloomy
+Boston,United States,Fog,fog,79.97,gloomy
+Dallas,United States,Smoke,smoke,71.7,stressed
+New York,United States,Fog,fog,56.2,gloomy
+Boston,United States,Drizzle,light drizzle,64.95,calm
+Tampa,United States,Smoke,smoke,61.55,stressed
+New York,United States,Drizzle,light drizzle,47.95,sad
+Portland,United States,Clear,clear sky,92.79,energetic
+Portland,United States,Rain,heavy intensity rain,53.51,sad
+Chicago,United States,Drizzle,light drizzle,65.17,calm
+Portland,United States,Clear,clear sky,77.57,happy
+Las Vegas,United States,Dust,dust,68.96,stressed
+Las Vegas,United States,Mist,mist,82.25,gloomy
+Atlanta,United States,Clear,few clouds,88.98,energetic
+New York,United States,Drizzle,light drizzle,59.95,calm
+San Jose,United States,Haze,haze,59.37,gloomy
