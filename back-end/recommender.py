@@ -2,7 +2,7 @@
 recommender.py: This is where we map current weather to song mood/genre
 '''
 
-import get_music
+import get_music_v2
 import get_weather
 import pandas as pd
 import joblib
@@ -37,7 +37,7 @@ def recommend_music(user_location):
     mood = map_weather_to_mood(weather_data)
 
     #calling music
-    songs_recommendations = get_music.get_songs(mood[0])
+    songs_recommendations = get_music_v2.get_songs(mood[0])
     return weather_data, mood[0], songs_recommendations
 
 

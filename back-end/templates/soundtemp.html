@@ -71,30 +71,53 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 35px 25px;
+      gap: 14px;
     }
 
     .album-art {
-      width: 150px;
-      height: 150px;
+      width: 190px;
+      height: 190px;
       background: #ccc;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      border-radius: 18px;
       background-size: cover;
       background-position: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .song-info {
       text-align: center;
     }
 
-    .controls button {
+    .song-info h3,
+    .song-info p {
+      margin: 6px 0;
+    }
+
+    .spotify-link {
+      text-decoration: none;
+      color: white;
+      background: #1DB954;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .spotify-embed {
+      width: 100%;
+      max-width: 320px;
+      height: 80px;
+      border-radius: 12px;
+    }
+
+    /* .controls button {
       border: none;
       background: none;
       cursor: pointer;
       font-size: 24px;
       margin: 10px;
-    }
+    } */
 
   </style>
 </head>
@@ -135,94 +158,29 @@
     <div class="album-art" id="album-art"></div>
 
     <div class="song-info">
-      <p id="song-title">Select a song</p>
+      <h3 id="song-title">Select a song</h3>
       <p id="song-artist"></p>
     </div>
 
-    <div class="controls">
-      <button onclick="playPreview()">▶</button>
-    </div>
+    <a id="spotify-link" href="#" target="_blank" class="spotify-link">
+      Open in Spotify
+    </a>
 
-    <audio id="audio"></audio>
+    <iframe
+      id="spotify-player"
+      class="spotify-embed"
+      src=""
+      width="100%"
+      height="80"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
   </div>
 
 </div>
 
-<script>
-let currentSong = null;
 
-async function loadData() {
-  try {
-    const response = await fetch("/recommend");
-    const data = await response.json();
-
-    document.getElementById("weather").innerHTML = `
-      <h3>Weather</h3>
-      <p>${data.weather.city}, ${data.weather.country}</p>
-      <p>${data.weather.weather}</p>
-      <p>${data.weather.temperature}°F</p>
-    `;
-
-    const firstSong = data.songs[0];
-    currentSong = firstSong;
-
-    document.getElementById("playlist").innerHTML = `
-      <h3>Recommended</h3>
-      <p>${firstSong.name} - ${firstSong.artist}</p>
-<!--      <button onclick='selectSong(${JSON.stringify(firstSong)})'>Play</button>-->
-    `;
-
-    updatePlayer(firstSong);
-
-    const container = document.getElementById("more-playlists");
-    container.innerHTML = "";
-
-    data.songs.slice(1, 6).forEach(song => {
-      const div = document.createElement("div");
-      div.className = "playlist-item";
-
-      div.innerHTML = `
-        <img src="${song.album_cover}">
-        <p>${song.name}</p>
-        <small>${song.artist}</small>
-      `;
-
-      div.onclick = () => selectSong(song);
-
-      container.appendChild(div);
-    });
-
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-function selectSong(song) {
-  currentSong = song;
-  updatePlayer(song);
-}
-
-function updatePlayer(song) {
-  document.getElementById("album-art").style.backgroundImage = `url(${song.album_cover})`;
-  document.getElementById("song-title").innerText = song.name;
-  document.getElementById("song-artist").innerText = song.artist;
-
-  // IMPORTANT: Deezer preview (30 sec)
-  document.getElementById("audio").src = song.preview; // fallback
-}
-
-function playPreview() {
-  const audio = document.getElementById("audio");
-
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-}
-
-loadData();
-</script>
-
+<script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

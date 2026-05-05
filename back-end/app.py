@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template
 from get_weather import getUserLocation, getCurrentWeather
-from get_music import get_songs
+from get_music_v2 import get_songs
 
 app = Flask(__name__)
 
