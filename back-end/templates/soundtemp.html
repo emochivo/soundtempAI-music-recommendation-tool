@@ -4,20 +4,45 @@
   <meta charset="UTF-8" />
   <title>SoundTemp</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffe8be;
+    }
+
+    .title {
+      font-family: "Nanum Pen Script", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 80px;
+      color: #406aaf;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .sub-header {
+      font-family: "Nanum Pen Script", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      color: #406aaf;
+      margin-bottom: 10px;
     }
 
     .container {
       display: flex;
-      height: 100vh;
+      min-height: 100vh;
+      padding-bottom: 40px;
+      box-sizing: border-box;
     }
 
     .main {
-      flex: 3;
+      flex: 0 0 850px;
       padding: 20px;
     }
 
@@ -38,10 +63,24 @@
       padding: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       min-height: 140px;
+      /* max-width: 38%; */
+      border: 2px solid #406aaf;
+    }
+
+    .card-title {
+      font-family: 'Nanum Pen Script', cursive; 
+      font-weight: 400; 
+      font-style: normal; 
+      font-size: 30px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      color: #406aaf;
+      font-weight: bold;
     }
 
     .playlists {
       margin-top: 20px;
+      margin-bottom: 10px;
     }
 
     .playlist-grid {
@@ -65,24 +104,30 @@
     }
 
     .player {
-      flex: 1;
-      background: #ffffff;
+      /* flex: 1; */
+      flex: 0 0 360px;
+      background: #406aaf;
       border-left: 1px solid #ddd;
+      border-radius: 45px;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 35px 25px;
       gap: 14px;
+      margin: 100px auto 0 auto;
+      height: 600px;
+      color: white;
+      box-shadow: 0 12px 10px rgba(0,0,0,0.1);
     }
 
     .album-art {
-      width: 190px;
-      height: 190px;
+      width: 200px;
+      height: 200px;
       background: #ccc;
-      border-radius: 18px;
       background-size: cover;
       background-position: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border: 4px solid #f7dd7d;
+      margin-top: 40px;
     }
 
     .song-info {
@@ -128,27 +173,35 @@
 
   <!-- LEFT SIDE -->
   <div class="main">
-    <h1>SoundTemp</h1>
+    <h1 class="title">SoundTemp</h1>
 
     <div class="top-section">
 
       <!-- Weather -->
-      <div class="card" id="weather">
-        <h3>Weather Data</h3>
-        <p>Loading...</p>
+      <div class="card">
+        <h3 class="card-title">
+          Weather
+        </h3>
+        <div id="weather">
+          <p>Loading...</p>
+        </div>
       </div>
 
       <!-- Recommended -->
-      <div class="card" id="playlist">
-        <h3>Recommended Playlist</h3>
-        <p>Loading...</p>
+      <div class="card">
+        <h3 class="card-title">
+          Recommended
+        </h3>
+        <div id="playlist">
+          <p>Loading...</p>
+        </div>
       </div>
 
     </div>
 
     <!-- More playlists -->
     <div class="playlists">
-      <h3>More Songs</h3>
+      <h3 class="sub-header">Songs with the same vibe</h3>
       <div class="playlist-grid" id="more-playlists"></div>
     </div>
   </div>

@@ -7,7 +7,6 @@ async function loadData() {
 
     // Weather
     document.getElementById("weather").innerHTML = `
-      <h3>Weather</h3>
       <p>${data.weather.city}, ${data.weather.country}</p>
       <p>${data.weather.weather}</p>
       <p>${data.weather.temperature}°F</p>
@@ -18,7 +17,6 @@ async function loadData() {
     currentSong = firstSong;
 
     document.getElementById("playlist").innerHTML = `
-      <h3>Recommended</h3>
       <p>${firstSong.name} - ${firstSong.artist}</p>
     `;
 
