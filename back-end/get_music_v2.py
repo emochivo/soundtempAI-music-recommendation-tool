@@ -36,31 +36,41 @@ def mood_to_query(mood):
     return mapping.get(mood.lower(), mapping["default"])
 
 
-def get_songs(mood, limit=10):
+def get_songs(mood, limit=50):
 
     query = mood_to_query(mood)
 
-    results = sp.search(
-        q=query,
-        type="track",
-        limit=limit
-    )
-
     songs = []
+    offset = 0
 
-    for item in results["tracks"]["items"]:
-        songs.append({
-            "name": item["name"],
-            "artist": item["artists"][0]["name"],
-            # "album": item["album"]["name"],
-            "album_cover": item["album"]["images"][0]["url"] if item["album"]["images"] else None,
-            "link": item["external_urls"]["spotify"],
-            "embed_url": item["external_urls"]["spotify"].replace(
-                "https://open.spotify.com/track/",
-                "https://open.spotify.com/embed/track/"
-            )
-            # "preview_url": item["preview_url"]
-        })
+    while len(songs) < limit:
+        batch_limit = min(10, limit-len(songs))
+
+        results = sp.search(
+            q=query,
+            type="track",
+            limit=batch_limit,
+            offset=offset
+        )
+
+        items = results["tracks"]["items"]
+
+        if not items:
+            break
+
+        for item in items:
+            songs.append({
+                "name": item["name"],
+                "artist": item["artists"][0]["name"],
+                "album_cover": item["album"]["images"][0]["url"] if item["album"]["images"] else None,
+                "link": item["external_urls"]["spotify"],
+                "embed_url": item["external_urls"]["spotify"].replace(
+                    "https://open.spotify.com/track/",
+                    "https://open.spotify.com/embed/track/"
+                )
+            })
+
+        offset += batch_limit
 
     return songs
 
