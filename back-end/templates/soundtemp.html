@@ -83,24 +83,54 @@
       margin-bottom: 10px;
     }
 
+    .carousel-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 920px;
+    }
+
     .playlist-grid {
       display: flex;
       gap: 20px;
       margin-top: 10px;
+      overflow: hidden;
+      scroll-behavior: smooth;
     }
 
     .playlist-item {
-      width: 120px;
+      flex: 0 0 150px;
+      width: 150px;
+      height: 260px;
       background: white;
       border-radius: 10px;
       padding: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
+      width: 120px;
+    }
+
+    .playlist-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     .playlist-item img {
       width: 100%;
       border-radius: 8px;
+    }
+
+    .arrow {
+      border: none;
+      background: none;
+      font-size: 42px;
+      cursor: pointer;
+      color: #406AAF;
+      padding: 5px;
+    }
+
+    .arrow:hover {
+      transform: scale(1.15);
     }
 
     .player {
@@ -156,14 +186,6 @@
       border-radius: 12px;
     }
 
-    /* .controls button {
-      border: none;
-      background: none;
-      cursor: pointer;
-      font-size: 24px;
-      margin: 10px;
-    } */
-
   </style>
 </head>
 
@@ -202,7 +224,15 @@
     <!-- More playlists -->
     <div class="playlists">
       <h3 class="sub-header">Songs with the same vibe</h3>
-      <div class="playlist-grid" id="more-playlists"></div>
+
+      <div class="carousel-wrapper">
+        <button class="arrow left-arrow" onclick="scrollSongs(-1)">‹</button>
+
+        <div class="playlist-grid" id="more-playlists"></div>
+
+        <button class="arrow right-arrow" onclick="scrollSongs(1)">›</button>
+      </div>
+
     </div>
   </div>
 

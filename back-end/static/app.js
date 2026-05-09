@@ -26,7 +26,7 @@ async function loadData() {
     const container = document.getElementById("more-playlists");
     container.innerHTML = "";
 
-    data.songs.slice(1, 6).forEach(song => {
+    data.songs.forEach(song => {
       const div = document.createElement("div");
       div.className = "playlist-item";
 
@@ -57,6 +57,15 @@ function updatePlayer(song) {
   document.getElementById("song-artist").innerText = song.artist;
 
   document.getElementById("spotify-player").src = song.embed_url;
+  document.getElementById("spotify-link").href = song.link;
+}
+
+function scrollSongs(direction) {
+  const container = document.getElementById("more-playlists");
+  container.scrollBy({
+    left: direction * 350,
+    behavior: "smooth"
+  });
 }
 
 // run on page load
