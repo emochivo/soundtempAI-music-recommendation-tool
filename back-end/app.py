@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, render_template
 from get_weather import getUserLocation, getCurrentWeather
 from get_music_v2 import get_songs
-
-app = Flask(__name__)
+# from get_music import get_songs
+from recommender import recommend_music
 
 
 app = Flask(__name__)
@@ -16,19 +16,26 @@ def recommend():
         # 1. Get user location
         location = getUserLocation()
 
-        # 2. Get weather
-        weather_data = getCurrentWeather(location["lat"], location["lon"])
+        # # 2. Use recommender based on predicted mood
+        weather_data, mood, recommendations = recommend_music(location)
 
-        # 3. Extract mood (use weather_desc or weather)
-        mood = weather_data["weather"].lower()
+        # # 2. Get weather
+        # weather_data = getCurrentWeather(location["lat"], location["lon"])
 
-        # 4. Get songs
-        songs = get_songs(mood)
+        # # 3. Extract mood (use weather_desc or weather)
+        # mood = weather_data["weather"].lower()
+
+        # # 4. Get songs
+        # songs = get_songs(mood)
 
         return jsonify({
             "weather": weather_data,
-            "songs": songs
+            "songs": recommendations
         })
+        # return jsonify({
+        #     "weather": weather_data,
+        #     "songs": songs
+        # })
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

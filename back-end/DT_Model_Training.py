@@ -7,7 +7,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import joblib
 
-#NEXT STEPS - Tuning Hyperparameters to prevent overfitting or underfitting
 
 #defining dataset - synthetic 
 #features - weather, weather_desc, temperature
@@ -43,6 +42,7 @@ pipeline.fit(X_train, y_train)
 
 y_pred = pipeline.predict(X_test)
 score = accuracy_score(y_test, y_pred)
+#91% accuracy score
 print("Model Accuracy:", score)
 
 #saving the model
