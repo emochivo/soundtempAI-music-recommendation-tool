@@ -1,11 +1,12 @@
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, confusion_matrix, f1_score, classification_report
 from sklearn.model_selection import GridSearchCV
+import matplotlib.pyplot as plt
 import joblib
 
 
@@ -93,6 +94,17 @@ print("Classification Report:", class_report)
 #saving the model
 joblib.dump(best_model, 'dt_pipeline.pkl')
 
+#plotting the decision tree
+plt.figure(figsize=(22,12))
+extract = best_model.named_steps["preprocessor"]
+ohe = extract.named_transformers_["ohe"]
+ohe_feature_names = ohe.get_feature_names_out(["weather", "weather_desc"])
+numeric = ["temperature"]
+
+names = list(ohe_feature_names) + numeric
+
+plot_tree(best_model.named_steps["classifier"], feature_names = names)
+plt.show()
 #training model
 # pipeline.fit(X_train, y_train)
 

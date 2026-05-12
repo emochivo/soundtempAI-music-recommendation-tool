@@ -15,23 +15,34 @@ sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_
 
 def mood_to_query(mood):
     mapping = {
-        "thunderstorm": "dark cinematic chill",
-        "drizzle": "soft lo-fi chill",
-        "rain": "lofi chill",
-        "snow": "calm cozy acoustic",
-        "mist": "soft ambient calm",
-        "smoke": "dark ambient cinematic",
-        "haze": "lofi mellow distant",
-        "fog": "dreamy ambient chill",
-        "dust": "desert ambient minimal",
-        "sand": "desert ambient minimal",
-        "ash": "dark cinematic tension",
-        "squall": "intense electronic energy",
-        "tornado": "chaotic cinematic orchestral",
-        "clear": "happy upbeat pop",
-        "clouds": "indie mellow relaxed",
-        "default": "pop music"
+    
+        "calm": "soft lo-fi chill",
+        "sad": "soft ambient calm",
+        "stressed": "dark ambient cinematic",
+        "gloomy": "lofi mellow distant",
+        "neutral": "dreamy ambient chill",
+        "energetic": "intense electronic energy",
+        "happy": "happy upbeat pop",
+        "default": "pop music",
     }
+    # mapping = {
+    #     "thunderstorm": "dark cinematic chill",
+    #     "drizzle": "soft lo-fi chill",
+    #     "rain": "lofi chill",
+    #     "snow": "calm cozy acoustic",
+    #     "mist": "soft ambient calm",
+    #     "smoke": "dark ambient cinematic",
+    #     "haze": "lofi mellow distant",
+    #     "fog": "dreamy ambient chill",
+    #     "dust": "desert ambient minimal",
+    #     "sand": "desert ambient minimal",
+    #     "ash": "dark cinematic tension",
+    #     "squall": "intense electronic energy",
+    #     "tornado": "chaotic cinematic orchestral",
+    #     "clear": "happy upbeat pop",
+    #     "clouds": "indie mellow relaxed",
+    #     "default": "pop music",
+    # }
 
     return mapping.get(mood.lower(), mapping["default"])
 

@@ -18,6 +18,7 @@ def recommend():
 
         # # 2. Use recommender based on predicted mood
         weather_data, mood, recommendations = recommend_music(location)
+        # print(f"Mood: {mood}")
 
         # # 2. Get weather
         # weather_data = getCurrentWeather(location["lat"], location["lon"])

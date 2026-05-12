@@ -6,6 +6,7 @@ import get_music_v2
 import get_weather
 import pandas as pd
 import joblib
+import matplotlib.pyplot as plt
 
 #testing - getMusic function 
 #needs one argument - mood
